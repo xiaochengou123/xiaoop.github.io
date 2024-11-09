@@ -2,18 +2,69 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Commpatible" content="IE=edge">
+		<meta name="viewport" content="witdh=device-width,initial-scale=1.0">
 		<title>我的音乐</title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(184,226,251);
+			}
+			.shell{
+				-webkit-mask-image: linear-gradient(to right,#0000,#000,#000,#0000);
+				overflow-x: auto;
+				display: flex;
+				gap:5rem;
+				align-items: start;
+				padding: 50px;
+			}
+			.shell>div{
+				block-size: 320px;
+				background-color: #fff;
+				aspect-ratio: 1;
+				border-radius: 10px;
+			}
+			.shell img{
+				width: 100%;
+			}
+			::-webkit-scrollbar{
+				height: 16px;
+			}
+			/*设置滚动调的高度*/
+			::-webkit-scrollbar-track{
+				background-color: #f5f5f5;
+			}
+			::-webkit-scrollbar-thumb{
+				background-color: #555;
+				border-radius: 10px;
+			}
+			h3{font-size: 28px;color: #f0f0f0;text-align: center;}
+		</style>
 	</head>
-	<body align="center">
-		<a href="index.html" align="left">点击我<img src="78.jpg"></a>
-		<h1 align="center">我的音乐</h1>
-			<video src="49.mp4"controls align="center" preload="none"></video>	
-			<video src="50.mp4"controls align="center" preload="none"></video>	
-			<video src="51.mp4"controls align="center" preload="none"></video>	
-			<video src="52.mp4"controls align="center" preload="none"></video>
-		        <video src="54.mp4"controls align="center" preload="none"></video>
-		        <video src="55.mp4"controls align="center" preload="none"></video>
-		        <video src="57.mp4"controls align="center" preload="none"></video>
-		        <video src="58.mp4"controls align="center" preload="none" ></video>
+	<body>
+		<h3>我的音乐</h3><br>
+		<div class="shell">
+			<div><video src="73.gif" autoplay align="center" preload="none" ></video></div>
+			<div><video src="49.mp4"controls align="center" preload="none" ></video></div>
+			<div><video src="50.mp4"controls align="center" preload="none"></video></div>
+			<div><video src="51.mp4"controls align="center" preload="none"></video></div>
+			<div><video src="52.mp4"controls align="center" preload="none"></video></div>
+			<div><video src="54.mp4"controls align="center" preload="none"></video></div>
+			<div><video src="55.mp4"controls align="center"  width="500" height="300" preload="none" ></div>
+			<div><video src="57.mp4"controls align="center" preload="none"></div>
+			<div><video src="58.mp4"controls align="center" preload="none"></div>
+			<div><video src="59.mp4"controls align="center" preload="none"></div>
+			<div><video src="60.mp4"controls align="center" preload="none"></div>
+			<div><video src="61.mp4"controls align="center" preload="none"></div>
+			<div><video src="63.mp4"controls align="center" preload="none"></div>
+			<div><img src="" alt=""></div>
+		</div>
+		<a href="index.html" ><img src="78.jpg" width="100px" height="80px"></a>
 	</body>
 </html>
