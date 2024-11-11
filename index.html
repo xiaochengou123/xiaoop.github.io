@@ -1,39 +1,129 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>个人介绍</title>
-		<style type="text/css">
+		<meta charset="utf-8" />
+		<style>
 			body{text-align: center;}
-			ul{list-style-type: none;text-align: center;}
-			li{display:inline;margin: 8px 50px;font-size: 30px;}
-			div{width: 1200px;height: 1000px;margin:0 auto;border:5px solid #EEF3AA;}
-			a:active,a:visitedm,a:link{text-decoration: none;color:block}
-			a:hover{text-decoration: none;border-bottom:5px solid red;color:red}
+						a:active,a:visitedm,a:link{text-decoration: none;color:block}
+						a:hover{text-decoration: none;border-bottom:5px solid red;color:red}
+			ul,li{
+				padding: 0;
+				margin:0;
+				list-style: none;
+			}
+			body{
+				margin: 0;
+				width: 100vw;
+				height: 100vh;
+				background: linear-gradient(to right,#f8b2cf,#a2eaea);
+			  }
+			  .box{
+				  display: flex;
+				   position:fixed;
+				   top:50%;
+				   left: 50%;
+				   transform: translate(-50%,-50%);
+			  }
+			  .nax{
+				  width: 1000px;
+				  height: 65px;
+				  background-color: #6bcad0;
+				  display: flex;
+			  }
+			 .nax a{
+				  display: flex;
+				  justify-content: center;
+				  align-items: center;
+				  height: 100%;
+				  color: #fff;
+				  font-size: 18px;
+			  } 
+			  .nax>.item{
+				  width: 20%;
+				  height: 100%;
+				  position: relative;
+                  transition: .4s;
+			  }
+			  .list{
+				  position: absolute;
+				  top: 65px;
+				  width: 100%;
+				  overflow: hidden;
+				  max-height: 0px;
+				   transition: .4s;
+				   border-radius: 0 0 10px 10px;
+				   background-color: #ea7592;
+			  }
+			  .itemTwo{
+				  height: 65px;
+				  transition: .4s;
+			  }
+			  .nax>.item:hover{
+				  background-color:  #ea7592;
+			 }
+			  .nax>.item:hover>.list{
+			  				 max-height: 500px;
+			  }
+			  a{
+				  text-decoration: none;
+			  }
+			  .itemTwo:hover{
+				  background-color: rgba(255,255,255,.3);
+				  
+			  }
+			  	
 		</style>
 	</head>
-	<body>
-		
-		<div>	
-	   <img src="img/eol.jpg" width="600" height="400">
-		<h2>大家好，我叫陈成，博客名叫小菜狗，以下是我个人自我介绍</h2>
-			<ul>	
-			<li><a href="edu_5_1.html" target="content">关于我</a><li>
-			<li><a href="edu_5_6.html" target="content">我的学习记录</a></li>
-			<li><a href="https://account.bilibili.com/account/home" target="content">我的博客</a></li>
-			<li><a href="edu_5_2.html" target="content">我的王者照片</a></li>
-			<li><a href="edu_5_5.html" target="content">我的音乐</a></li>
-			<li><a href="edu_5_7.html" target="content">你懂的</a></li>
-			<li><a href="猫和老鼠.html" target="content">猫和老鼠</a></li>
-			<li><a href="edu_5_6.html" target="content">我的伤感视频</a></li>
-			<li><a href="edu_5_4.html" target="content">联系我</a></li>
+	<body>	
+	<img src="img/eol.jpg" width="600" height="400">
+	<h2>大家好，我叫陈成，博客名叫小菜狗，以下是我个人自我介绍</h2>
+		<div class="box">
+	
+			<ul class="nax">
+				<li class="item">
+					<a href="#">关于我</a>
+					<ul class="list">
+						<li class="itemTwo"><a href="edu_5_6.html">我的学习记录</a></li>
+						<li class="itemTwo"><a href="edu_5_5.html">我的音乐</a></li>
+							<a href="edu_5_1.html">我的事</a>
+					</ul>
+				</li>
+				<li class="item">
+					<a href="#">我的王者照片</a>
+					<ul class="list">
+						<li class="itemTwo"><a href="edu_5_2.html">王者</a></li>
+						<li class="itemTwo"><a href="#">CSS语言后续更新</a></li>
+						<li class="itemTwo"><a href="#">JS语言后续更新</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<a href="#">我的伤感视频</a>
+					<ul class="list">
+						<li class="itemTwo"><a href="edu_5_3.html">抽象视频</a></li>
+						<li class="itemTwo"><a href="#">后续更新</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<a href="#">联系我</a>
+					<ul class="list">
+						<li class="itemTwo"><a href="edu_5_4.html">联系我</a></li>
+						<li class="itemTwo"><a href="#">留言墙</a></li>
+						<li class="itemTwo"><a href="edu_5_7.html">你喜欢的</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<a href="#">游戏开发框架</a>
+					<ul class="list">
+						<li class="itemTwo"><a href="猫和老鼠.html">猫和老鼠</a></li>
+						<li class="itemTwo"><a href="#">移动游戏后续更新</a></li>
+						<li class="itemTwo"><a href="#">游戏</a></li>
+					</ul>
+					<video src="67.mp4"controls align="center" preload="none" width="600" height="300"></video>
 			</ul>
-			<video src="67.mp4"controls align="center" preload="none" width="600" height="300"></video>
-			<iframe framebor="0" name="contet" src="猫和老鼠.html"
-			width="100%" height="700px"></iframe>
-		</div>
+			
 		<script>
 				   alert("欢迎来到我的个人自我介绍！");
 		</script>
+		</div>
 	</body>
 </html>
